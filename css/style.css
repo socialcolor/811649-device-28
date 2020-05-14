@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: local('../fonts/Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+        url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+        url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+:root {
+    --basic-black: #000000;
+    --basic-dark: #363636;
+    --basic-white: #ffffff;
+    --basic-grey: #464646;
+    --basic-half-gray: #E5E5E5;
+    --basic-grey-light: #E5E5E5;
+    --special-yellow: #F7E296;
+    --special-green: #91C92F;
+    --special-yellow-dark: #F0C52E;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.link-small {
+    text-decoration: none;
+    color: black;
+    font-size: inherit;
+}
+.link-medium {
+    text-decoration: none;
+    color: black;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.letter-spacing {
+    letter-spacing: 0.1em;
+}
+
+.header {
+    width: 1160px;
+    height: auto;
+    min-height: 300px;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+    background-color: var(--special-yellow);
+}
+
+.logo {
+    position: absolute;
+    top: -20px;
+    left: 60px;
+}
+
+.sup-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 43px 60px 0px 60px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: flex-start;
+}
+
+.sup-menu-login {
+    margin-left: 123px;
+}
+
+.sup-menu-compare {
+    margin-left: 240px;
+}
+
+.sup-menu-basket {
+    margin-left: 65px;
+}
+
+.sub-menu {
+    list-style-type: none;
+}
+
+.search-form {
+    position: relative;
+}
+
+.search-form::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icons/icon_search.svg);
+}
+
+.search-field {
+    border: none;
+    font-size: 15px;
+    background: none;
+    font-family: 'Open Sans', sans-serif;
+    width: 400px;
+    padding: 0px 0px 12px 37px;
+    border: 2px solid transparent;
+}
+
+.search-field:hover {
+    border-bottom: 2px solid var(--basic-black);
+}
+
+.search-button {
+    outline: 2px solid black;
+    background: none;
+    padding: 13px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    display: none;
+}
+
+.sub-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px 60px 0px 60px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: flex-start;
+}
+
+.collection {
+    display: none;
+}
