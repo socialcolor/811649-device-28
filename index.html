@@ -7,196 +7,210 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <svg class="logo" width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.701993V34.302H13.381C15.5624 34.3553 17.7309 33.954 19.7487 33.1235C21.7665 32.2929 23.5892 31.0514 25.101 29.478C26.6506 27.9007 27.8665 26.0273 28.6761 23.9697C29.4857 21.912 29.8724 19.7124 29.813 17.502C29.8724 15.2916 29.4857 13.092 28.6761 11.0343C27.8665 8.97669 26.6506 7.1033 25.101 5.52599C23.5891 3.9527 21.7663 2.7113 19.7486 1.88079C17.7308 1.05028 15.5623 0.648834 13.381 0.701993H-0.151001ZM7.582 26.91V8.09099H13.382C14.5845 8.04309 15.7838 8.24675 16.903 8.68895C18.0223 9.13115 19.0369 9.80215 19.882 10.659C20.7304 11.5766 21.3875 12.6541 21.8149 13.8285C22.2422 15.0029 22.4313 16.2507 22.371 17.499C22.4313 18.7473 22.2423 19.9951 21.8149 21.1695C21.3876 22.3439 20.7305 23.4214 19.882 24.339C19.0371 25.196 18.0225 25.8672 16.9032 26.3094C15.7839 26.7516 14.5845 26.9551 13.382 26.907H7.582V26.91ZM42.382 20.958H54.464V13.658H42.378V8.09099H55.669V0.701993H34.645V34.302H55.91V26.91H42.378V20.958H42.382ZM78.725 34.302L89.744 0.701993H81.286L73.795 25.422L66.304 0.701993H57.847L68.866 34.302H78.725ZM93.125 34.302H100.858V0.701993H93.125V34.302ZM131.74 32.886C134.233 31.574 136.321 29.6076 137.781 27.198L131.111 23.358C130.381 24.659 129.279 25.7121 127.946 26.382C126.505 27.1262 124.903 27.504 123.282 27.482C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.746C115.195 23.7791 114.489 22.6393 114.028 21.3942C113.568 20.1492 113.362 18.8242 113.423 17.498C113.362 16.1718 113.568 14.8468 114.028 13.6017C114.489 12.3567 115.195 11.2168 116.105 10.25C117.048 9.32422 118.173 8.60333 119.408 8.13252C120.643 7.6617 121.962 7.45113 123.282 7.51399C124.893 7.49098 126.486 7.86172 127.921 8.59399C129.263 9.2718 130.373 10.3326 131.111 11.642L137.781 7.80199C136.294 5.39746 134.191 3.43378 131.691 2.11399C129.109 0.720899 126.216 0.00268347 123.282 0.0259933C113.503 -0.246007 105.485 7.71699 105.691 17.498C105.483 27.279 113.5 35.245 123.279 34.974C126.229 35.0012 129.138 34.283 131.737 32.886H131.74ZM149.621 20.958H161.703V13.658H149.618V8.09099H162.908V0.701993H141.885V34.302H163.15V26.91H149.618V20.958H149.621Z" fill="black"/>
-      </svg>        
-      <ul class="sup-menu">
-        <li class="sup-menu__serch">
-          <form class="search-form" action="https://echo.htmlacademy.ru/">
-            <input class="search-field" type="text" placeholder="Поиск по сайту">
-            <button class="search-button">Найти</button>
-          </form>
-        </li>
-        <li class="sup-menu-login">
-          <a href="#" class="link-small login">Войти</a>
-        </li>
-        <li class="sup-menu-compare">
-          <a href="#" class="link-small compare">Сравнить</a>
-        </li>
-        <li class="sup-menu-basket">
-          <a href="#" class="link-small basket">Корзина</a>
-        </li>
-      </ul>
-      <ul class="sub-menu">
-        <li class="sub-menu__item">
-          <a href="#" class="link-medium letter-spacing">Каталог товаров</a>
-          <ul class="collection">
-            <li class="collection__item">
+    
+    <header class="header"> 
+      <div class="header-top">
+        <svg class="logo" width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.701993V34.302H13.381C15.5624 34.3553 17.7309 33.954 19.7487 33.1235C21.7665 32.2929 23.5892 31.0514 25.101 29.478C26.6506 27.9007 27.8665 26.0273 28.6761 23.9697C29.4857 21.912 29.8724 19.7124 29.813 17.502C29.8724 15.2916 29.4857 13.092 28.6761 11.0343C27.8665 8.97669 26.6506 7.1033 25.101 5.52599C23.5891 3.9527 21.7663 2.7113 19.7486 1.88079C17.7308 1.05028 15.5623 0.648834 13.381 0.701993H-0.151001ZM7.582 26.91V8.09099H13.382C14.5845 8.04309 15.7838 8.24675 16.903 8.68895C18.0223 9.13115 19.0369 9.80215 19.882 10.659C20.7304 11.5766 21.3875 12.6541 21.8149 13.8285C22.2422 15.0029 22.4313 16.2507 22.371 17.499C22.4313 18.7473 22.2423 19.9951 21.8149 21.1695C21.3876 22.3439 20.7305 23.4214 19.882 24.339C19.0371 25.196 18.0225 25.8672 16.9032 26.3094C15.7839 26.7516 14.5845 26.9551 13.382 26.907H7.582V26.91ZM42.382 20.958H54.464V13.658H42.378V8.09099H55.669V0.701993H34.645V34.302H55.91V26.91H42.378V20.958H42.382ZM78.725 34.302L89.744 0.701993H81.286L73.795 25.422L66.304 0.701993H57.847L68.866 34.302H78.725ZM93.125 34.302H100.858V0.701993H93.125V34.302ZM131.74 32.886C134.233 31.574 136.321 29.6076 137.781 27.198L131.111 23.358C130.381 24.659 129.279 25.7121 127.946 26.382C126.505 27.1262 124.903 27.504 123.282 27.482C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.746C115.195 23.7791 114.489 22.6393 114.028 21.3942C113.568 20.1492 113.362 18.8242 113.423 17.498C113.362 16.1718 113.568 14.8468 114.028 13.6017C114.489 12.3567 115.195 11.2168 116.105 10.25C117.048 9.32422 118.173 8.60333 119.408 8.13252C120.643 7.6617 121.962 7.45113 123.282 7.51399C124.893 7.49098 126.486 7.86172 127.921 8.59399C129.263 9.2718 130.373 10.3326 131.111 11.642L137.781 7.80199C136.294 5.39746 134.191 3.43378 131.691 2.11399C129.109 0.720899 126.216 0.00268347 123.282 0.0259933C113.503 -0.246007 105.485 7.71699 105.691 17.498C105.483 27.279 113.5 35.245 123.279 34.974C126.229 35.0012 129.138 34.283 131.737 32.886H131.74ZM149.621 20.958H161.703V13.658H149.618V8.09099H162.908V0.701993H141.885V34.302H163.15V26.91H149.618V20.958H149.621Z" fill="black"/>
+        </svg>
+        <form class="search-form" action="https://echo.htmlacademy.ru/">
+          <input class="search-field" type="text" placeholder="Поиск по сайту">
+          <button class="search-button">Найти</button>
+        </form>
+        <ul class="services-menu">
+          <li class="services-menu-item login">
+            <a href="" class="link-small login">Войти</a>
+          </li>
+          <li class="services-menu-item compare">
+            <a href="" class="link-small compare">Сравнить</a>
+          </li>
+          <li class="services-menu-item basket">
+            <a href="" class="link-small basket">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header-bottom">
+        <div class="catalog">
+          <a href="catalog.html" class="link-medium letter-spacing">Каталог товаров</a>
+          <ul class="hidden-menu">
+            <li>
               <a href="" class="link-small">Виртуальная реальность</a>
               <a href="" class="link-small">Моноподы для селфи</a>
               <a href="" class="link-small">Экшн-камеры</a>
             </li>
-            <li class="collection__item">
+            <li>
               <a href="" class="link-small">Фитнес-браслеты</a>
               <a href="" class="link-small">Умные часы</a>
             </li>
-            <li class="collection__item">
+            <li>
               <a href="" class="link-small">Квадрокоптер</a>
             </li>
-          </ul>
-        </li>
-        <li class="sub-menu__item">
-          <a href="#" class="link-medium">Доставка</a>
-        </li>
-        <li class="sub-menu__item">
-          <a href="#" class="link-medium">Гарантия</a>
-        </li>
-        <li class="sub-menu__item">
-          <a href="#" class="link-medium">Контакты</a>
-        </li>
-      </ul>
-    </header>
-    <main class="content">
-      <div class="slider">
-        <div class="slider-inputs">
-          <input name="slide" id="one" class="slider-input" type="radio" checked>
-          <input name="slide" id="two" class="slider-input" type="radio">
-          <input name="slide" id="three" class="slider-input" type="radio">
+          </ul>    
         </div>
+        <ul class="services-link">
+          <li class="services-link-item"><a href="" class="link-medium">Доставка</a></li>
+          <li class="services-link-item"><a href="" class="link-medium">Гарантия</a></li>
+          <li class="services-link-item"><a href="" class="link-medium">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="slider">
         <div class="slide" id="slide-one">
-          <div class="slid-box">
+          <div class="slide-image-box">
             <img src="" alt="" class="slide__img">
           </div>
-          <div class="slide-box">
-            <p class="slide__number">1</p>
-            <h2 class="slide__caption">Делай селфи, <br>как Бен стиллер!</h2>
-            <p class="slide__description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#" class="link-button">Подробнее</a>
-            <div class="slide-property table">
-              <div class="row">
-                <span class="cell">8,5</span>
-                <span class="cell">5 кг</span>
-                <span class="cell">карбон</span>
-              </div>
-              <div class="row">
-                <span class="cell">Длина палки</span>
-                <span class="cell">Вес палки</span>
-                <span class="cell">Материал</span>
-              </div>
-            </div>
+          <div class="slide-info-box">
+            <p class="slide-number">1</p>
+            <h2 class="headline">Делай селфи, <br>как Бен стиллер!</h2>
+            <p class="description-black letter-spacing">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <a href="" class="link-button">Подробнее</a>
+            <table class="slide-property table">
+              <thead class="table-head">
+                <tr class="table-row">
+                  <td class="table-cell">8,5</td>
+                  <td class="table-cell">5 кг</td>
+                  <td class="table-cell">Карбон</td>
+                </tr>
+              </thead>
+              <tr class="table-row">
+                <td class="table-cell">Длина палки</td>
+                <td class="table-cell">Вес палки</td>
+                <td class="table-cell">Материал</td>
+              </tr>
+            </table>
           </div>
         </div>
-      </div>
-      <ul class="collaection-icon">
-        <li class="collection-icon__item">
-          <a href="#" class="link-icon">
-            <img src="" alt="" class="link-icon__img">
-            <span class="link-icon-caption"></span>
-          </a>
-        </li>
-        <li class="collection-icon__item">
-          <a href="#" class="link-icon">
-            <img src="" alt="" class="link-icon__img">
-            <span class="link-icon-caption"></span>
-          </a>
-        </li>
-        <li class="collection-icon__item">
-          <a href="#" class="link-icon">
-            <img src="" alt="" class="link-icon__img">
-            <span class="link-icon-caption"></span>
-          </a>
-        </li>
-        <li class="collection-icon__item">
-          <a href="#" class="link-icon">
-            <img src="" alt="" class="link-icon__img">
-            <span class="link-icon-caption"></span>
-          </a>
-        </li>
-        <li class="collection-icon__item">
-          <a href="#" class="link-icon">
-            <img src="" alt="" class="link-icon__img">
-            <span class="link-icon-caption"></span>
-          </a>
-        </li>
-        <li class="collection-icon__item">
-          <a href="#" class="link-icon">
-            <img src="" alt="" class="link-icon__img">
-            <span class="link-icon-caption"></span>
-          </a>
-        </li>
-      </ul>
-      <div class="services">
-        <div class="services__inputs">
-          <label for="delivery" class="link-button">Доставка</label>
-          <label for="garant" class="link-button">Гарантия</label>
-          <label for="credit" class="link-button">Кредит</label>
-          <input name="services" id="delivery" type="radio" class="services__input" checked>
-          <input name="services" id="garant" type="radio" class="services__input">
-          <input name="services" id="credit" type="radio" class="services__input">
+        <div class="slider-icon-box">
+          <span class="slider-icon active"></span>
+          <span class="slider-icon"></span>
+          <span class="slider-icon"></span>
         </div>
-        <div id="delivery" class="services__info">
+      </section>
+      <section class="popular">
+        <ul class="popular-list">
+          <li class="popular-item">
+            <a href="" class="popular-link">
+              <img src="" alt="" class="popular-icon">
+              <span class="caption-small">Виртуальная реальность</span>
+            </a>
+          </li>
+          <li class="popular-item">
+            <a href="" class="popular-link">
+              <img src="" alt="" class="popular-icon">
+              <span class="caption-small">Моноподы для селфи</span>
+            </a>
+          </li>
+          <li class="popular-item">
+            <a href="" class="popular-link">
+              <img src="" alt="" class="popular-icon">
+              <span class="caption-small">Экшн-камеры</span>
+            </a>
+          </li>
+          <li class="popular-item">
+            <a href="" class="popular-link">
+              <img src="" alt="" class="popular-icon">
+              <span class="caption-small">Фитнес-браслеты</span>
+            </a>
+          </li>
+          <li class="popular-item">
+            <a href="" class="popular-link">
+              <img src="" alt="" class="popular-icon">
+              <span class="caption-small">Умные часы</span>
+            </a>
+          </li>
+          <li class="popular-item">
+            <a href="" class="popular-link">
+              <img src="" alt="" class="popular-icon">
+              <span class="caption-small">Квадрокоптеры</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="services">
+        <div class="services-menu">
+          <a href="" class="link-button services active"></a>
+          <a href="" class="link-button services"></a>
+          <a href="" class="link-button services"></a>
+        </div>
+        <div id="delivery" class="services-info">
           <h2 class="caption">Доставка</h2>
-          <p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <p class="description-services">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </div>
-      </div>
-      <ul class="brands-icon">
-        <li class="brands-item">
-          <img src="" alt="" class="brends-img">
-        </li>
-        <li class="brands-item">
-          <img src="" alt="" class="brends-img">
-        </li>
-        <li class="brands-item">
-          <img src="" alt="" class="brends-img">
-        </li>
-      </ul>
-      <div class="info">
-        <div class="about">
-          <h3 class="caption">О нас</h3>
-          <p class="description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-          <p class="description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+      </section>
+      <section class="logotypes">
+        <ul class="brands-icon">
+          <li class="brands-item"><a href="" class="link"><img src="" alt="" class="brends-img"></a></li>
+          <li class="brands-item"><a href="" class="link"><img src="" alt="" class="brends-img"></a></li>
+          <li class="brands-item"><a href="" class="link"><img src="" alt="" class="brends-img"></a></li>
+        </ul>
+      </section>
+
+      <section class="info">
+        <div class="half-width">
+          <h3 class="headline letter-spacing">О нас</h3>
+          <p class="description-black">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="description-black">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
             <ul class="delivery-list">
               <li class="delivery-item">Деловые линии</li>
               <li class="delivery-item">Автотрейдинг</li>
               <li class="delivery-item">ЖелДорЭкседиция</li>
             </ul>
-            <a href="#" class="link-button">Подробнее о нас</a>
+            <a href="" class="link-button">Подробнее о нас</a>
         </div>
-        <div class="contacts">
-          <h3 class="caption">Контакты</h3>
-          <p class="description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <img src="" alt="" class="map">
-          <a href="#" class="link-button">Напишите нам</a>
+        <div class="half-width">
+          <h3 class="headline letter-spacing">Контакты</h3>
+          <p class="description-black">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+          <a href="" class="map-link"><img src="" alt=""></a>
+          <a href="" class="link-button">Напишите нам</a>
         </div>
-      </div>
+      </section>
     </main>
+
     <footer class="footer">
-      <div class="address">
-        <img src="" alt="" class="logo-yellow">
-        <p class="description">г. Москва, ул. Строителей, 15</p>
+      <div class="sup-line">
+        <svg class="logo-footer" width="163" height="35" viewBox="0 0 163 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M-0.151001 0.701993V34.302H13.381C15.5624 34.3553 17.7309 33.954 19.7487 33.1235C21.7665 32.2929 23.5892 31.0514 25.101 29.478C26.6506 27.9007 27.8665 26.0273 28.6761 23.9697C29.4857 21.912 29.8724 19.7124 29.813 17.502C29.8724 15.2916 29.4857 13.092 28.6761 11.0343C27.8665 8.97669 26.6506 7.1033 25.101 5.52599C23.5891 3.9527 21.7663 2.7113 19.7486 1.88079C17.7308 1.05028 15.5623 0.648834 13.381 0.701993H-0.151001ZM7.582 26.91V8.09099H13.382C14.5845 8.04309 15.7838 8.24675 16.903 8.68895C18.0223 9.13115 19.0369 9.80215 19.882 10.659C20.7304 11.5766 21.3875 12.6541 21.8149 13.8285C22.2422 15.0029 22.4313 16.2507 22.371 17.499C22.4313 18.7473 22.2423 19.9951 21.8149 21.1695C21.3876 22.3439 20.7305 23.4214 19.882 24.339C19.0371 25.196 18.0225 25.8672 16.9032 26.3094C15.7839 26.7516 14.5845 26.9551 13.382 26.907H7.582V26.91ZM42.382 20.958H54.464V13.658H42.378V8.09099H55.669V0.701993H34.645V34.302H55.91V26.91H42.378V20.958H42.382ZM78.725 34.302L89.744 0.701993H81.286L73.795 25.422L66.304 0.701993H57.847L68.866 34.302H78.725ZM93.125 34.302H100.858V0.701993H93.125V34.302ZM131.74 32.886C134.233 31.574 136.321 29.6076 137.781 27.198L131.111 23.358C130.381 24.659 129.279 25.7121 127.946 26.382C126.505 27.1262 124.903 27.504 123.282 27.482C121.962 27.5449 120.643 27.3343 119.408 26.8635C118.173 26.3927 117.048 25.6718 116.105 24.746C115.195 23.7791 114.489 22.6393 114.028 21.3942C113.568 20.1492 113.362 18.8242 113.423 17.498C113.362 16.1718 113.568 14.8468 114.028 13.6017C114.489 12.3567 115.195 11.2168 116.105 10.25C117.048 9.32422 118.173 8.60333 119.408 8.13252C120.643 7.6617 121.962 7.45113 123.282 7.51399C124.893 7.49098 126.486 7.86172 127.921 8.59399C129.263 9.2718 130.373 10.3326 131.111 11.642L137.781 7.80199C136.294 5.39746 134.191 3.43378 131.691 2.11399C129.109 0.720899 126.216 0.00268347 123.282 0.0259933C113.503 -0.246007 105.485 7.71699 105.691 17.498C105.483 27.279 113.5 35.245 123.279 34.974C126.229 35.0012 129.138 34.283 131.737 32.886H131.74ZM149.621 20.958H161.703V13.658H149.618V8.09099H162.908V0.701993H141.885V34.302H163.15V26.91H149.618V20.958H149.621Z" fill="black"/>
+        </svg>
+        <ul class="services-menu-footer">
+          <li class="login">
+            <a href="" class="link-small login">Войти</a>
+          </li>
+          <li class="compare">
+            <a href="" class="link-small compare">Сравнить</a>
+          </li>
+          <li class="basket">
+            <a href="" class="link-small basket">Корзина</a>
+          </li>
+        </ul>
       </div>
-      <ul class="footer-menu">
-        <ul class="footer-services">
-          <li class="footer-services__item"><a href="#" class="footer-services__button"></a></li>
-          <li class="footer-services__item"><a href="#" class="footer-services__button"></a></li>
-          <li class="footer-services__item"><a href="#" class="footer-services__button"></a></li>          
+      <div class="middle-line">
+        <p class="description-white">г. Москва, ул. Строителей, 15</p>
+        <ul class="services-link">
+          <li>
+            <a href="" class="link-medium white">Доставка</a>
+          </li>
+          <li>
+            <a href="" class="link-medium white">Гарантия</a>
+          </li>
+          <li>
+            <a href="" class="link-medium white">Контакты</a>
+          </li>
         </ul>
-        <ul class="footer-social">
-          <li class="footer-social__item"><a href="#" class="footer-soclial__bitton"><img src="" alt=""></a></li>
-          <li class="footer-social__item"><a href="#" class="footer-soclial__bitton"><img src="" alt=""></a></li>
-          <li class="footer-social__item"><a href="#" class="footer-soclial__bitton"><img src="" alt=""></a></li>
+        <p class="description-white">
+          <a href="tel:+74954959595" class="link-small">Тел.: +7 (495) 495-95-95</a>
+        </p>
+      </div>  
+      <div class="sub-line">
+        <ul class="social-link">
+          <li class="link"><a href="" class="facebook"><img src="" alt=""></a></li>
+          <li class="link"><a href="" class="instagram"><img src="" alt=""></a></li>
+          <li class="link"><a href="" class="twitter"><img src="" alt=""></a></li>
         </ul>
-      </ul>
-      <div class="other">
-        <ul class="user-services">
-          <li class="user-services"><a href="" class="link-small login">Войти</a></li>
-          <li class="user-services"><a href="" class="link-small compare">Сравнить</a></li>
-          <li class="user-services"><a href="" class="link-small basket">Корзина</a></li>
-        </ul>
-        <span class="desciption"></span>
-        <span class="description"><img src="" alt="" class="academy"></span>
+        <a href="" class="link"><img src="" alt=""></a>
       </div>
     </footer>
+
   </body>
 </html>
