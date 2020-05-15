@@ -79,7 +79,7 @@ body {
 .search-form {
     position: relative;
     height: 34px;
-    width: 440px;
+    width: 50%;
     box-sizing: border-box;
 }
 
@@ -159,6 +159,10 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
+}
+
+.catalog {
+    width: 50%;
 }
 
 .services-link {
