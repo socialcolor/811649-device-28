@@ -15,7 +15,7 @@
         </svg>
         <form class="search-form" action="https://echo.htmlacademy.ru/">
           <input class="search-field" type="text" placeholder="Поиск по сайту">
-          <button class="search-button">Найти</button>
+          <button class="search-button"><span class="button-text">Найти</span></button>
         </form>
         <ul class="services-menu">
           <li class="services-menu-item login">
@@ -31,21 +31,21 @@
       </div>
       <div class="header-bottom">
         <div class="catalog">
-          <a href="catalog.html" class="link-medium letter-spacing">Каталог товаров</a>
+          <a href="catalog.html" class="link-medium letter-spacing catalog-link">Каталог товаров</a>
           <ul class="hidden-menu">
-            <li>
+            <li class="hidden-menu-item">
               <a href="" class="link-small">Виртуальная реальность</a>
               <a href="" class="link-small">Моноподы для селфи</a>
               <a href="" class="link-small">Экшн-камеры</a>
             </li>
-            <li>
+            <li class="hidden-menu-item">
               <a href="" class="link-small">Фитнес-браслеты</a>
               <a href="" class="link-small">Умные часы</a>
             </li>
-            <li>
+            <li class="hidden-menu-item">
               <a href="" class="link-small">Квадрокоптер</a>
             </li>
-          </ul>    
+          </ul> 
         </div>
         <ul class="services-link">
           <li class="services-link-item"><a href="" class="link-medium">Доставка</a></li>
@@ -57,29 +57,28 @@
 
     <main class="content">
       <section class="slider">
-        <div class="slide" id="slide-one">
-          <div class="slide-image-box">
-            <img src="" alt="" class="slide__img">
+        <div class="slide">
+          <div class="slide-box">
+            <img src="img/slider/slider-1 1.png" alt="Селфи палка" class="slide-img" width="384" height="486">
           </div>
-          <div class="slide-info-box">
-            <p class="slide-number">1</p>
-            <h2 class="headline">Делай селфи, <br>как Бен стиллер!</h2>
-            <p class="description-black letter-spacing">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <div class="slide-box">
+            <span class="slide-number">01</span>
+            <h2 class="headline">Делай селфи, <br>как Бен Cтиллер!</h2>
+            <p class="description-black">Самая длинная палка для селфи доступна в нашем магазине.<br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="" class="link-button">Подробнее</a>
-            <table class="slide-property table">
-              <thead class="table-head">
-                <tr class="table-row">
-                  <td class="table-cell">8,5</td>
-                  <td class="table-cell">5 кг</td>
-                  <td class="table-cell">Карбон</td>
-                </tr>
-              </thead>
-              <tr class="table-row">
-                <td class="table-cell">Длина палки</td>
-                <td class="table-cell">Вес палки</td>
-                <td class="table-cell">Материал</td>
-              </tr>
-            </table>
+            <div class="slide-property">
+              <p class="property-box-name">
+                <span class="property-name">8,5 м</span>
+                <span class="property-name">5 кг</span>
+                <span class="property-name">Карбон</span>
+              </p>
+              <p class="property-box-value">
+                <span class="property-value">Длина палки</span>
+                <span class="property-value">Вес палки</span>
+                <span class="property-value">Материал</span>
+              </p>
+
+            </div>
           </div>
         </div>
         <div class="slider-icon-box">
