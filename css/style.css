@@ -224,12 +224,8 @@ body {
     margin-left: 44px;
 }
 
-.header-bottom {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
+.user {
+    margin-right: 18px;
 }
 
 .link-small.login::before {
@@ -261,6 +257,14 @@ body {
     height: 10px;
     background-image: url('../img/icons/basket.png');
     background-repeat: no-repeat;
+}
+
+.header-bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .catalog {
