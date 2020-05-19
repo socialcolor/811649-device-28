@@ -216,7 +216,7 @@ a {
     list-style-type: none;
     width: 50%;
     display: flex;
-    padding: 14px 0 0 0;
+    padding: 15px 0 0 0;
     margin: 0;
     justify-content: flex-end;
 }
@@ -260,10 +260,12 @@ a {
 
 .services-menu-link.compare::before {
     background-image: url('../img/icons/compare.png');
+    margin-right: 13px;
 }
 
 .services-menu-link.basket::before {
     background-image: url('../img/icons/basket.png');
+    padding-bottom: 2px;
 }
 
 .header-bottom {
@@ -351,7 +353,7 @@ a {
 
 .slider {
     position: relative;
-    background-image: linear-gradient(to bottom, var(--special-yellow) 113px, transparent 113px);
+    background-image: linear-gradient(to bottom, var(--special-yellow) 114px, transparent 114px);
 }
 
 .slide {
@@ -396,7 +398,7 @@ a {
     margin: 0;
 }
 
-.headline::before {
+.headline-line-white::before {
     content: '';
     position: absolute;
     width: 100px;
@@ -487,4 +489,13 @@ a {
 
 .hidden {
     display: none;
+}
+
+
+/* 
+    Footer
+*/
+
+.footer {
+    background-color: var(--basic-dark);
 }
