@@ -114,43 +114,57 @@
           <h3 class="tools-name">Фильтры:</h3>
           <h3 class="tools-name">Сортировка:</h3>
           <ul class="sort-type">
-            <li class="sort-name">По цене</li>
-            <li class="sort-name">По типу</li>
-            <li class="sort-name">По популярности</li>
+            <li class="sort-name">
+              <button type="button">По цене</button>
+            </li>
+            <li class="sort-name">
+              <button type="button">По типу</button>
+            </li>
+            <li class="sort-name">
+              <button type="button">По популярности</button>
+            </li>
             <li class="sort-name"><span class="triangle-up"></span></li>
             <li class="sort-name"><span class="triangle-down"></span></li>
           </ul>
         </div>
         <div class="filters">
+            <h4 class="visually-hidden">Фильтры товаров</h4>
             <form action="https://echo.htmlacademy.ru/">
               <label for="price" class="filter-name">
-                Стоимость
+                <span>Стоимость</span>
                 <input type="range" class="filter-price" id="price" name="price" min="0" max="4500" step="100" value="0"> 
               </label>
               <fieldset>
                 <legend>Цвет</legend>
                 <label>
+                  <span>Черный</span>
                   <input type="checkbox" name="color-black" value="color-black" checked>
                 </label>
                 <label>
+                  <span>Белый</span>
                   <input type="checkbox" name="color-white" value="color-white">
                 </label>
                 <label>
+                  <span>Синий</span>
                   <input type="checkbox" name="color-blue" value="color-blue" checked>
                 </label>
                 <label>
+                  <span>Красный</span>
                   <input type="checkbox" name="color-red" value="color-red" checked>
                 </label>
                 <label>
+                  <span>Розовый</span>
                   <input type="checkbox" name="color-pink" value="color-pink">
                 </label>
               </fieldset>
               <fieldset>
                 <legend>Bluetooth</legend>
                 <label>
+                  <span>Есть</span>
                   <input type="radio" name="Bluetooth" value="yes" checked>
                 </label>
                 <label>
+                  <span>Нет</span>
                   <input type="radio" name="Bluetooth" value="no">
                 </label>
               </fieldset>
@@ -160,7 +174,7 @@
         <section class="products">
             <div class="product-lis">
               <article class="product">
-                <img src="img/catalog/resize/item-1.jpg" alt="Любительская селфи-палка" class="product-image" width="360" height="380">
+                <img src="img/catalog/item-1.jpg" alt="Любительская селфи-палка" class="product-image" width="360" height="380">
                 <div class="product-info">
                   <h2 class="product-title">Любительская селфи-палка </h2>
                   <span class="product-price">500 руб.</span>
@@ -169,7 +183,7 @@
                 </div>
               </article>
               <article class="product">
-                <img src="img/catalog/resize/item-2.jpg" alt="Профессиональная селфи-палка" class="product-image" width="360" height="380">
+                <img src="img/catalog/item-2.jpg" alt="Профессиональная селфи-палка" class="product-image" width="360" height="380">
                 <div class="product-info">
                   <h2 class="product-title">Профессиональная селфи-палка</h2>
                   <span class="product-price">1 500 руб.</span>
@@ -178,7 +192,7 @@
                 </div>
               </article>
               <article class="product">
-                <img src="img/catalog/resize/item-3.jpg" alt="Непотопляемая селфи-палка" class="product-image" width="360" height="380">
+                <img src="img/catalog/item-3.jpg" alt="Непотопляемая селфи-палка" class="product-image" width="360" height="380">
                 <div class="product-info">
                   <h2 class="product-title">Непотопляемая селфи-палка</h2>
                   <span class="product-price">2 500 руб.</span>
@@ -187,7 +201,7 @@
                 </div>
               </article>
               <article class="product">
-                <img src="img/catalog/resize/item-4.jpg" alt="Селфи-палка «Следуй за мной»" class="product-image" width="360" height="380">
+                <img src="img/catalog/item-4.jpg" alt="Селфи-палка «Следуй за мной»" class="product-image" width="360" height="380">
                 <div class="product-info">
                   <h2 class="product-title">Селфи-палка «Следуй за мной»</h2>
                   <span class="product-price">4 900 руб.</span>

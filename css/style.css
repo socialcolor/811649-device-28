@@ -25,6 +25,7 @@
     --basic-grey: #464646;
     --basic-half-gray: #E5E5E5;
     --basic-grey-light: #E5E5E5;
+    --basic-grey-ultralight: #F2F2F2;
     --special-yellow: #F7E296;
     --special-green: #91C92F;
     --special-yellow-dark: #F0C52E;
@@ -431,44 +432,13 @@ a {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* .slide-property  {
-    margin: 45px 0 0 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-}
-.property-box-name {
-    margin-bottom: 11px;
-}
-
-.property-box-value {
-    margin: 0;
-}
-
-.property-name {
-    font-family: 'Gilroy light', 'Arial', sans-serif;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 0.1em;
-    margin-right: 58px;
-}
-
-.property-value {
-    font-family: 'Gilroy light', 'Arial', sans-serif;
-    font-size: 13px;
-    line-height: 15px;
-    letter-spacing: 0.1em;
-    margin-right: 62px;
-} */
-
-table {
+.slide-property {
     border-collapse: collapse;
     text-align: left;
     margin-top: 58px;
 }
 
-th {
+.slide-property-headline {
     font-family: 'Gilroy light', 'Arial', sans-serif;
     font-size: 36px;
     line-height: 42px;
@@ -477,12 +447,27 @@ th {
     padding-bottom: 15px;
 }
 
-td {
+.slide-property-value {
     font-family: 'Gilroy light', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 15px;
     letter-spacing: 0.1em;
-    margin-right: 62px;
+}
+
+.slide-property-headline-last {
+    padding: 0px 0px 10px 1px;
+}
+
+.slide-property-value-last {
+    padding: 0 0 0px 5px;
+}
+
+.th-padding {
+    padding: 0px 0px 10px 1px;
+}
+
+.td-padding {
+    padding: 0 0 0px 5px;
 }
 
 .slider-icon-box {
@@ -550,4 +535,127 @@ td {
 
 .footer {
     background-color: var(--basic-dark );
+}
+
+
+/* 
+    Modal
+*/
+
+.modal {
+    display: none;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-feedback {
+    width: 960px;
+    height: 550px;
+    background-color: var(--basic-white);
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
+}
+
+.form-feedback {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 92px 100px 145px 100px;
+    box-sizing: border-box;
+}
+
+.feedback-caption {
+    font-family: 'Gilroy', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+.feedback-name,
+.feedback-email,
+.feedback-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.feedback-name-input,
+.feedback-email-input,
+.feedback-text-input {
+    border: none;
+    background-color: var(--basic-grey-ultralight);
+    padding: 0px;
+}
+
+.feedback-name-input::placeholder,
+.feedback-email-input::placeholder,
+.feedback-text-input::placeholder {
+    padding: 17px 20px;
+    font-family: 'Gilroy Light', 'Arial', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+label.feedback-text {
+    margin-top: 32px;
+}
+
+.feedback-name-input,
+.feedback-email-input {
+    width: 360px;
+    height: 50px;
+}
+
+.form-feedback .link-button {
+    background-color: transparent;
+    margin-top: 71px;
+    padding: 0px 34px;
+    background-image: linear-gradient(to bottom, transparent 8px, var(--special-yellow) 8px, var(--special-yellow) 16px, transparent 16px);
+}
+
+.form-feedback .link-button:hover {
+    background-image: linear-gradient(to bottom, var(--special-yellow), var(--special-yellow));
+}
+
+.button-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--special-yellow);
+    opacity: 0.5;
+}
+
+.button-close::before,
+.button-close::after {
+    content: '';
+    width: 3px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: var(--basic-white);
+}
+
+.button-close::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.button-close::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.button-close:hover {
+    opacity: 1;
+}
+
+.button-close:active{
+    opacity: 0.7;
 }
