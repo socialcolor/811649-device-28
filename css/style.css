@@ -157,7 +157,7 @@ a {
     width: 1160px;
     height: auto;
     margin: 40px auto auto auto;
-    padding: 30px 60px 50px 60px;
+    padding: 32px 60px 50px 60px;
     position: relative;
     background-color: var(--special-yellow);
     box-sizing: border-box;
@@ -182,7 +182,7 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
 }
 
 .search-form {
@@ -464,8 +464,10 @@ a {
 }
 
 .description-black {
-    margin: 26px 0 60px 0;
-    font-family: 'Open Sans', 'Arial' sans-serif;
+    margin: 27px 0 60px 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 .slide-property {
@@ -587,13 +589,13 @@ a {
 .about .description-about {
     margin: 0;
     font-family: 'Open Sans', 'Arial', sans-serif;
-    margin-top: 40px;
+    margin-top: 38px;
     line-height: 28px;
 }
 
 .delivery-list {
-    margin-top: 64px;
-    margin-bottom: 82px;
+    margin-top: 65px;
+    margin-bottom: 84px;
     padding-left: 19px;
     list-style-type: circle;
 }
@@ -601,7 +603,7 @@ a {
 .delivery-item {
     font-family: 'Gilroy', 'Arial', sans-serif;
     font-weight: bold;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     padding-left: 13px;
     font-size: 16px;
 }
@@ -612,8 +614,8 @@ a {
 }
 
 .description-contact {
-    margin-top: 39px;
-    margin-bottom: 41px;
+    margin-top: 38px;
+    margin-bottom: 39px;
     font-weight: 300;
     font-size: 15px;
     line-height: 28px;
@@ -621,7 +623,7 @@ a {
 
 a.map-link {
     display: block;
-    margin-bottom: 80px;
+    margin-bottom: 82px;
 }
 
 .contact .link-button {
@@ -645,7 +647,7 @@ a.map-link {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: 30px;
+    margin-top: 32px;
     list-style-type: none;
     padding: 0;
 }
@@ -868,7 +870,7 @@ a.map-link {
     flex-direction: column;
     flex-wrap: nowrap;
     margin: auto;
-    padding: 31px 140px 59px 140px;
+    padding: 33px 140px 59px 140px;
     position: relative;
     box-sizing: border-box;
 }
