@@ -587,22 +587,22 @@ a {
 .about .description-about {
     margin: 0;
     font-family: 'Open Sans', 'Arial', sans-serif;
-    margin-top: 39px;
+    margin-top: 40px;
     line-height: 28px;
 }
 
 .delivery-list {
-    margin-top: 65px;
+    margin-top: 64px;
     margin-bottom: 82px;
-    padding: 0;
-    list-style-type: none;
+    padding-left: 19px;
+    list-style-type: circle;
 }
 
 .delivery-item {
     font-family: 'Gilroy', 'Arial', sans-serif;
     font-weight: bold;
     margin-bottom: 23px;
-    padding-left: 33px;
+    padding-left: 13px;
     font-size: 16px;
 }
 
@@ -646,6 +646,8 @@ a.map-link {
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 30px;
+    list-style-type: none;
+    padding: 0;
 }
 
 .breadcrumbs li{
@@ -726,20 +728,20 @@ a.map-link {
     width: 468px;
 }
 
-.filters form {
+.form-filters {
     display: flex;
     flex-direction: column;
     width: 200px;
 }
 
-.filters fieldset {
+.form-filters fieldset {
     border: none;
     padding: 0;
     margin: 0;
     margin-top: 38px;
 }
 
-.filters legend {
+.form-filters legend {
     font-family: 'Gilroy', 'Arial', sans-serif;
     font-weight: bold;
     font-size: 14px;
@@ -754,13 +756,13 @@ a.map-link {
     letter-spacing: 0.1em;
 }
 
-.filters fieldset {
+.form-filters fieldset {
     border: none;
     display: flex;
     flex-direction: column;
 }
 
-.filters label {
+.form-filters label {
     font-family: 'Open Sans', 'Arial', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -828,6 +830,10 @@ a.map-link {
     color: var(--basic-light-gray)
 }
 
+.form-filters .link-button {
+    background-color: transparent;
+}
+
 .product {
     position: relative;
 }
@@ -862,15 +868,20 @@ a.map-link {
     flex-direction: column;
     flex-wrap: nowrap;
     margin: auto;
-    padding: 45px 140px 59px 140px;
+    padding: 31px 140px 59px 140px;
     position: relative;
     box-sizing: border-box;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 .sup-line {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 72px;
+    margin-bottom: 57px;
 }
 
 .link-logo-footer {
@@ -923,8 +934,7 @@ a.map-link {
 
 .middle-line {
     font-size: 0;
-    margin-bottom: 67px;
-
+    margin-bottom: 52px
 }
 
 .description-white {
@@ -960,7 +970,7 @@ a.map-link {
 }
 
 .footer-line {
-    margin-top: 12px;
+    margin-top: 28px;
 }
 
 .social-link {
@@ -982,6 +992,7 @@ a.map-link {
 
 .academy {
     margin-left: 467px;
+    margin-top: 14px;
 }
 
 .academy:hover {
