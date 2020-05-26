@@ -70,11 +70,6 @@ img {
     height: auto;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
 /* 
     Links
 */
@@ -597,8 +592,10 @@ a {
 }
 
 .delivery-list {
-    margin-top: 66px;
+    margin-top: 65px;
     margin-bottom: 82px;
+    padding: 0;
+    list-style-type: none;
 }
 
 .delivery-item {
