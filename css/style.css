@@ -1251,6 +1251,11 @@ a.map-link {
     background-color: transparent;
 }
 
+input[type='checkbox']:focus + span, 
+input[type='radio']:focus + span {
+    outline: 2px solid black;
+}
+
 .products {
     padding-top: 70px;
     padding-left: 71px;
