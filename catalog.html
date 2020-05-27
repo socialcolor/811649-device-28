@@ -111,29 +111,25 @@
           </ul>
         </div> 
         <div class="tools-line">
-<!--           <div class="tools-line-wrapper"> -->
-            <h3 class="tools-name dark">Фильтры:</h3>
-<!--           </div> -->
+          <h3 class="tools-name dark">Фильтр:</h3>
           <h3 class="tools-name">Сортировка:</h3>
           <ul class="sort-type">
             <li class="sort-name">
-              <button type="button">По цене</button>
+              <button type="button" class="sort-button sort-button-active ">По цене</button>
             </li>
             <li class="sort-name">
-              <button type="button">По типу</button>
+              <button type="button" class="sort-button">По типу</button>
             </li>
             <li class="sort-name">
-              <button type="button">По популярности</button>
+              <button type="button" class="sort-button">По популярности</button>
             </li>
             <li class="sort-name">
-              <button type="button" class="triangle-up"><span class="visually-hidden">Сортировать по возратсанию</span></button>
-            </li>
-            <li class="sort-name">
-              <button type="button" class="triangle-down"><span class="visually-hidden">Сортировать по убыванию</span></button>
+              <button type="button" class="triangle triangle-up"><span class="visually-hidden">Сортировать по возратсанию</span></button>
+              <button type="button" class="triangle triangle-down triangle-active"><span class="visually-hidden">Сортировать по убыванию</span></button>
             </li>
           </ul>
         </div>
-        <div class="wrapper-filters">
+        <div class="filters-wrapper">
           <div class="filters">
               <h4 class="visually-hidden">Фильтры товаров</h4>
               <form class="form-filters" action="https://echo.htmlacademy.ru/">
@@ -186,17 +182,17 @@
                     <div class="product-info">
                       <h2 class="product-title">Любительская селфи-палка </h2>
                       <span class="product-price">500 руб.</span>
-                      <button class="link-button product-button">В корзину</button>
-                      <button class="link-small product-button">Добавить к сравнению</button>
+                      <button class="link-button product-button hidden">В корзину</button>
+                      <button class="link-small product-button hidden">Добавить к сравнению</button>
                     </div>
                 </article>
                 <article class="product">
                   <img src="img/catalog/item-2.jpg" alt="Профессиональная селфи-палка" class="product-image" width="360" height="380">
                   <div class="product-info">
-                    <h2 class="product-title">Профессиональная селфи-палка</h2>
+                    <h2 class="product-title">Профессиональная<br>селфи-палка</h2>
                     <span class="product-price">1 500 руб.</span>
-                    <button class="link-button product-button">В корзину</button>
-                    <button class="link-small product-button">Добавить к сравнению</button>
+                    <button class="link-button product-button hidden">В корзину</button>
+                    <button class="link-small product-button hidden">Добавить к сравнению</button>
                   </div>
                 </article>
                 <article class="product">
@@ -204,8 +200,8 @@
                   <div class="product-info">
                     <h2 class="product-title">Непотопляемая селфи-палка</h2>
                     <span class="product-price">2 500 руб.</span>
-                    <button class="link-button product-button">В корзину</button>
-                    <button class="link-small product-button">Добавить к сравнению</button>
+                    <button class="link-button product-button hidden">В корзину</button>
+                    <button class="link-small product-button hidden">Добавить к сравнению</button>
                   </div>
                 </article>
                 <article class="product">
@@ -213,18 +209,28 @@
                   <div class="product-info">
                     <h2 class="product-title">Селфи-палка «Следуй за мной»</h2>
                     <span class="product-price">4 900 руб.</span>
-                    <button class="link-button product-button">В корзину</button>
-                    <button class="link-small product-button">Добавить к сравнению</button>
+                    <button class="link-button product-button hidden">В корзину</button>
+                    <button class="link-small product-button hidden">Добавить к сравнению</button>
                   </div>
                 </article>
               </div>
-              <div class="pages">
-                <ul class="numbers">
-                  <li class="number"><a class="number-link">Назад</a></li>
-                  <li class="number"><a href="" class="number-link number-link-active">1</a></li>
-                  <li class="number"><a href="" class="number-link">2</a></li>
-                  <li class="number"><a href="" class="number-link">3</a></li>
-                  <li class="number"><a href="" class="number-link">Вперед</a></li>
+              <div class="pagination">
+                <ul class="pagination-list">
+                  <li class="pagination-item">
+                    <a class="pagination-link active-number">Назад</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-link active-number">1</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-link next">2</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-link next">3</a>
+                  </li>
+                  <li class="pagination-item">
+                    <a href="" class="pagination-link active-number">Вперед</a>
+                  </li>
                 </ul>
               </div>
           </section>
