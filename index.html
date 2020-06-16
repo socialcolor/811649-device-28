@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     
     <header class="header"> 
       <div class="header-top">
@@ -96,7 +96,6 @@
 
     <main class="content">
       <section class="slider">
-        <!-- Дождусь пока начнем делать слайдер на JS -->
         <h3 class="visually-hidden">Сладейр с товарами</h3>
         <div class="slide slide-active">
           <div class="slide-box-image">
@@ -336,13 +335,15 @@
               <li class="delivery-item">Автотрейдинг</li>
               <li class="delivery-item">ЖелДорЭкспедиция</li>
             </ul>
-            <a href="" class="link-button">Подробнее о нас</a>
+            <a href="map.html" class="link-button">Подробнее о нас</a>
         </div>
         <div class="contact">
           <h3 class="headline">Контакты</h3>
           <p class="description-contact">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a href="map" class="map-link"><img src="img/map.jpg" alt="Как до нас доехать" width="560" height="222"></a>
-          <a href="feedback" class="link-button">Напишите нам</a>
+          <a href="map.html" class="link-map">
+            <img src="img/map.jpg" alt="Как до нас доехать" width="560" height="222">
+          </a>
+          <a href="feedback.html" class="link-button link-feedback">Напишите нам</a>
         </div>
       </section>
     </main>
@@ -448,7 +449,7 @@
     <div class="modal-section">
       <div class="modal modal-feedback">
         <h4 class="visually-hidden">Форма обраной связи</h4>
-        <form class="form-feedback" action="https://echo.htmlacademy.ru">
+        <form class="form-feedback" action="https://echo.htmlacademy.ru" method="POST">
           <label class="label">
             <span class="label-caption">Ваше имя:</span>
             <input type="text" name="Name" class="feedback-name-input input" placeholder="Имя Фамилия" required>
@@ -467,9 +468,10 @@
       </div>
       <div class="modal modal-map">
         <h4 class="visually-hidden">Карта с нашем расположением</h4>
-        <img src="img/map-big.png" alt="Карта с нашим расположением">
-        <button type="button" class="button-close"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.3346545040124!2d37.52895389689749!3d55.6869043209446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1592327934510!5m2!1sru!2sru" width="960" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <button type="button" class="button-close button-close-map"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
       </div>
     </div>
+    <script src="js/common.js"></script>
   </body>
 </html>
