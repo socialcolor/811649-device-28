@@ -1555,9 +1555,8 @@ input[type='radio']:checked + .input-name:after {
 .product-button.link-button {
     background-color: transparent;
     border: none;
-    padding: 0;
     min-width: 200px;
-    margin: 14px auto;
+    margin: 12px auto;
     z-index: 1;
 }
 
@@ -1575,13 +1574,14 @@ input[type='radio']:checked + .input-name:after {
     letter-spacing: 0.1em;
     background-image: none;
     padding: 0px;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 .product-image-box:hover .product-buttons,
 .product-image-box:focus-within .product-buttons {
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;
@@ -1599,6 +1599,7 @@ input[type='radio']:checked + .input-name:after {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    background: var(--background-modal);
 }
 
 .pagination {
