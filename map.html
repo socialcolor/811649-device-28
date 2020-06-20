@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body">
     
@@ -19,7 +20,9 @@
           <svg class="icon-search" width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M6.66671 12C7.85003 11.9998 8.99924 11.6036 9.93137 10.8747L12.862 13.8053L13.8047 12.8627L10.874 9.932C11.6034 8.99977 11.9998 7.85029 12 6.66666C12 3.726 9.60737 1.33333 6.66671 1.33333C3.72604 1.33333 1.33337 3.726 1.33337 6.66666C1.33337 9.60733 3.72604 12 6.66671 12ZM6.66671 2.66666C8.87271 2.66666 10.6667 4.46066 10.6667 6.66666C10.6667 8.87266 8.87271 10.6667 6.66671 10.6667C4.46071 10.6667 2.66671 8.87266 2.66671 6.66666C2.66671 4.46066 4.46071 2.66666 6.66671 2.66666Z" fill="black"/>
           </svg>
-          <input class="search-field" type="text" placeholder="Поиск по сайту">
+          <label>
+            <input class="search-field" type="text" placeholder="Поиск по сайту">
+          </label>
           <button class="search-button"><span class="button-text">Найти</span></button>
         </form>
         <ul class="services-menu">
@@ -96,11 +99,11 @@
     </header>
 
     <main class="content">
-        <div class="modal-map">
-            <h4 class="visually-hidden">Карта с нашем расположением</h4>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.3346545040124!2d37.52895389689749!3d55.6869043209446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1592327934510!5m2!1sru!2sru" width="960" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            <button type="button" class="button-close"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
-          </div>
+      <div class="modal-map">
+        <h4 class="visually-hidden">Карта с нашем расположением</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.3346545040124!2d37.52895389689749!3d55.6869043209446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1592327934510!5m2!1sru!2sru" width="960" height="560" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <button type="button" class="button-close button-close-map"><span class="visually-hidden">Закрыть форму обратной связи</span></button>
+      </div>
     </main>
 
     <footer class="footer">
@@ -202,6 +205,7 @@
         </div>
       </div>
     </footer>
-    <script src="js/common.js"></script>
+        <!-- <script src="js/common.js"></script> -->
+        <script src="js/common.min.js"></script>
   </body>
 </html>
