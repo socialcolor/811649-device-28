@@ -46,6 +46,7 @@
     --basic-black-opacity-modal: rgba(0, 0, 0, 0.15);
     --basic-dark: #363636;
     --basic-white: #ffffff;
+    --basic-white-opacity: rgba(255, 255, 255, 0.3);
     --basic-grey: #464646;
     --basic-half-gray: #7E7E7E;
     --basic-light-gray: #A6A6A6;
@@ -207,7 +208,7 @@ a {
     width: 1160px;
     height: auto;
     margin: 40px auto auto auto;
-    padding: 32px 60px 50px 60px;
+    padding: 28px 60px 50px 60px;
     position: relative;
     background-color: var(--special-yellow);
     box-sizing: border-box;
@@ -232,21 +233,20 @@ a {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-bottom: 34px;
+    margin-bottom: 35px;
 }
 
 .search-form {
     position: relative;
-    height: 47px;
-    width: 438px;
+    width: 440px;
     display: flex;
     border: none;
-    border-bottom: 2px solid transparent;
     box-sizing: border-box;
 }
 
 .icon-search {
-    padding-top: 17px;
+    position: absolute;
+    top: 19px;
 }
 
 .search-field {
@@ -254,62 +254,55 @@ a {
     font-family: 'Open Sans', 'Arial', sans-serif;
     box-sizing: border-box;
     border: none;
+    border-bottom: 2px solid transparent;
     font-size: 15px;
     background: none;
-    padding: 3px 0px 0px 23px;
-    padding-bottom: 1px;
-    color: var(--basic-black);
+    padding: 18px 0px 13px 39px;
     opacity: 0.3;
 }
 
 .search-button {
-    outline: 2px solid var(--basic-black);
     background: none;
-    padding: 13px 15px;
+    padding: 0px 15px;
     font-size: 15px;
     text-transform: uppercase;
     box-sizing: border-box;
-    border: none;
+    border: 2px solid var(--basic-black);
     font-family: 'Open Sans', 'Arial', sans-serif;
     display: none;
     cursor: pointer;
 }
 
-.search-button:hover {
-    background-color: var(--basic-black);
-    color: var(--basic-white);
-}
-
-.search-button:active {
-    background-color: var(--basic-black);
-    color: var(--basic-white);
-}
-
-.search-button:active .button-text {
-    opacity: 0.3;
-}
-
-.search-form:hover {
-    border-bottom: 2px solid var(--basic-black);
-}
-
-.search-form:hover .search-button {
-    display: block;
-}
-
-.search-form:hover .search-field {
+.search-field:hover {
     opacity: 0.6;
 }
 
-.search-form:focus .search-field {
+.search-field:focus {
+    border-bottom: 2px solid var(--basic-black);
+    outline: 0;
     opacity: 1;
+}
+
+.search-field:focus + .search-button {
+    display: block;
+}
+
+.search-button:hover {
+    display: block;
+    background-color: var(--basic-black);
+    color: var(--basic-white);
+}
+
+.search-button:active  {
+    display: block;
+    color: var(--basic-white-opacity);
 }
 
 .services-menu {
     list-style-type: none;
     width: 50%;
     display: flex;
-    padding: 14px 0 0 0;
+    padding: 18px 0 0 0;
     margin: 0;
     justify-content: flex-end;
 }
@@ -1044,9 +1037,10 @@ a {
 
 .info-page {
     padding-top: 44px;
-    padding-left: 121px;
+    padding-left: 60px;
     width: 1160px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .breadcrumbs {
@@ -1108,6 +1102,7 @@ a {
 
 .wrapper-gradient-product {
     position: relative;
+    margin: auto;
 }
 
 .wrapper-gradient-product::before {
@@ -1126,28 +1121,30 @@ a {
     height: 100%;
     position: absolute;
     top: 0px;
-    background-image: linear-gradient(to right, var(--basic-grey-light) 35%, transparent 35%);
+    background-image: linear-gradient(to right, var(--basic-grey-light) 28%, transparent 28%);
     z-index: 1;
 }
 
 .products-page {
-    width: 1440px;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 51px;
+    width: 1160px;
 }
 
 .filters-box {
     background-color: var(--basic-grey-light);
-    width: 468px;
+    width: 328px;
     position: relative;
     z-index: 3;
 }
 
 .filter-button {
     min-width: 200px;
+    padding-left: 0px;
+    padding-right: 4px;
 }
 
 .filter-heading {
@@ -1165,14 +1162,14 @@ a {
     position: relative;
     text-align: center;
     margin: 0;
-    padding-left: 7px;
+    padding-right: 129px;
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: var(--basic-grey-dark);
 }
 
 .form-filters {
-    padding-left: 200px;
+    padding-left: 60px;
     padding-top: 70px;
     padding-right: 68px;
     position: relative;
@@ -1188,7 +1185,7 @@ a {
 }
 
 .filter:last-of-type {
-    margin-bottom: 42px;
+    margin-bottom: 41px;
 }
 
 .filter-caption {
@@ -1325,8 +1322,8 @@ a {
 
 input[type='radio'] + .input-name::before {
     content: '';
-    width: 24px;
-    height: 24px;
+    width: 25px;
+    height: 25px;
     border: 2px solid var(--basic-black);
     border-radius: 50%;
     margin-right: 16px;
@@ -1350,14 +1347,14 @@ input[type='radio']:checked + .input-name:after {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    width: 972px;
+    justify-content: space-between;;
     box-sizing: border-box;
     z-index: 2;
 }
 
 .tools-box {
     position: relative;
+    width: 100%;
     background-color: var(--basic-grey-light);
     display: flex;
     justify-content: flex-start;
@@ -1365,14 +1362,14 @@ input[type='radio']:checked + .input-name:after {
 }
 
 .tools-line {
-    width: 972px;
+    width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 72px;
-    padding-right: 143px;
+    padding-right: 5px;
 }
 
 .sort-list {
@@ -1476,12 +1473,16 @@ input[type='radio']:checked + .input-name:after {
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
     padding-top: 70px;
     padding-left: 72px;
+}
+
+.product-list li {
+    width: 360px;
 }
 
 .product {
@@ -1580,7 +1581,7 @@ input[type='radio']:checked + .input-name:after {
 .product-image-box:hover .product-buttons,
 .product-image-box:focus-within .product-buttons {
     height: 100%;
-    width: 100%;
+    width: 360px;
     box-sizing: border-box;
     position: absolute;
     top: 0;
